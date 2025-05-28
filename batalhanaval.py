@@ -93,3 +93,5 @@ while True:
         print("O jogo acabou!!")
         print("A cpu ganhou o jogo.")
         break
+
+print("oie")
