@@ -54,6 +54,8 @@ tabuleiroCpu = [
 
 while True:
     print("Aqui está o seu tabuleiro:")
+    for i in range(5):
+        print(player[i])
     print(f"Você ainda tem {embarcacoesPlayer} embarcações.")
     for i in range(5):
         print(tabuleiroPlayer[i])
