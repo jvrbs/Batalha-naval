@@ -52,10 +52,12 @@ tabuleiroCpu = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 ]
 
+print("As suas embarcações ficaram assim:")
+for i in range(5):
+        print(player[i])
+
 while True:
     print("Aqui está o seu tabuleiro:")
-    for i in range(5):
-        print(player[i])
     print(f"Você ainda tem {embarcacoesPlayer} embarcações.")
     for i in range(5):
         print(tabuleiroPlayer[i])
