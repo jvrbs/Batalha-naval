@@ -108,6 +108,11 @@ def ataque_cpu(tabuleiro_real_jogador, tabuleiro_visual_jogador):
 def main():
     # Inicialização
     tabuleiro_real_jogador = posicionar_navios_jogador()
+    
+    # NOVO: Mostra o tabuleiro com os navios posicionados
+    mostrar_tabuleiro(tabuleiro_real_jogador, "Seus Navios Posicionados")
+    input("\nPressione Enter para continuar...")  # Pausa para o jogador ver
+    
     tabuleiro_real_cpu = posicionar_navios_cpu()
     
     tabuleiro_visual_jogador = criar_tabuleiro()  # Mostra tiros da CPU
@@ -146,6 +151,6 @@ def main():
         mostrar_tabuleiro(tabuleiro_visual_jogador, "Seu Tabuleiro (Tiros da CPU)")
         print(f"Navios restantes: Você {navios_jogador} | CPU {navios_cpu}")
     
-    print("\nObrigado por jogar! Desenvolvido por [SEU NOME AQUI]")
+    print("\nObrigado por jogar! Desenvolvido por [ Eduardo Marques, João Vitor Ribas, Arthur Krauze ]")
 
 main()
