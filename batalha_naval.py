@@ -109,7 +109,7 @@ def main():
     # Inicialização
     tabuleiro_real_jogador = posicionar_navios_jogador()
     
-    # NOVO: Mostra o tabuleiro com os navios posicionados
+    # Mostra o tabuleiro com os navios posicionados
     mostrar_tabuleiro(tabuleiro_real_jogador, "Seus Navios Posicionados")
     input("\nPressione Enter para continuar...")  # Pausa para o jogador ver
     
