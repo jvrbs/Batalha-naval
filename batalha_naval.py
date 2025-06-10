@@ -105,7 +105,7 @@ def ataque_cpu(tabuleiro_real_jogador, tabuleiro_visual_jogador):
         tabuleiro_visual_jogador[linha][coluna] = ERRO
         return False
 
-# ---------- Jogo Principal ----------
+# Jogo Principal
 def main():
     # Inicialização
     tabuleiro_real_jogador = posicionar_navios_jogador()
