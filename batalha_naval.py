@@ -11,13 +11,13 @@ NAVIO = 'N'
 ACERTO = 'X'
 ERRO = 'O'
 
-# ---------- Funções Principais ----------
+# Funções Principais
 def criar_tabuleiro():
     """Cria um tabuleiro vazio com água"""
     return [[AGUA for _ in range(COLUNAS)] for _ in range(LINHAS)]
 
 def mostrar_tabuleiro(tabuleiro, nome):
-    """Exibe um tabuleiro formatado"""
+    """Exibe um tabuleiro antes do jogo"""
     print(f"\n{nome}:")
     for linha in tabuleiro:
         print(" ".join(linha))
@@ -33,7 +33,8 @@ def posicionar_navios_jogador():
                 linha = int(input(f"Linha para navio {i+1}: "))
                 coluna = int(input(f"Coluna para navio {i+1}: "))
                 
-                if 0 <= linha < LINHAS and 0 <= coluna < COLUNAS:
+                # está checando se as coordenadas colocadas pelo jogador estão dentro dos limites do tabuleiro.
+                if (0 <= linha) and (linha < LINHAS) and (0 <= coluna) and (coluna  < COLUNAS):
                     if tabuleiro[linha][coluna] == AGUA:
                         tabuleiro[linha][coluna] = NAVIO
                         break
@@ -151,6 +152,6 @@ def main():
         mostrar_tabuleiro(tabuleiro_visual_jogador, "Seu Tabuleiro (Tiros da CPU)")
         print(f"Navios restantes: Você {navios_jogador} | CPU {navios_cpu}")
     
-    print("\nObrigado por jogar! Desenvolvido por [ Eduardo Marques, João Vitor Ribas, Arthur Krauze ]")
+    print("\nObrigado por jogar! Desenvolvido por Eduardo Marques, João Vitor Ribas, e Arthur Krauze")
 
 main()
