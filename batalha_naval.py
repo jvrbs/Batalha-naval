@@ -1,3 +1,6 @@
+
+#https://youtu.be/y8mUO0gAKRs Vídeo explicativo do código
+
 print("Bem vindo ao jogo de batalha naval")
 
 import random
